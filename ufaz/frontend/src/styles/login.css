@@ -1,0 +1,145 @@
+
+
+/* Login */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 70%;
+  min-width: 70%;
+  height: 730px;
+  background: #d8e5d5;
+  border-radius: 20px;
+}
+
+
+.loginContainer h1,
+p,
+div,
+button {
+  text-align: center;
+
+}
+
+.loginContainer h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #215611;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  /* border: 1px solid black; */
+  min-width: 40%;
+  max-width: 100%;
+
+}
+
+.btns button {
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding-right: 6px;
+  border: none;
+  transition: 300ms all cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 45%;
+  height: 45px;
+}
+
+.btns button:nth-child(1) {
+
+  background: #4884EE;
+
+}
+
+.btns button:nth-child(2) {
+
+  background: #E24C33;
+}
+
+.btns button:nth-child(1):hover {
+  background-color: #2670f1;
+}
+
+.btns button:nth-child(2):hover {
+  background-color: #fc2600;
+}
+
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer input {
+
+  width: 464px;
+  height: 64px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputContainer input::placeholder {
+  padding-left: 20px;
+}
+
+
+.btnLogin {
+
+  width: 464px;
+  height: 64px;
+  background: #B3A768;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 20px;
+}
+
+@media only screen and (max-width:600px) {
+
+  .dots,
+  .left-circle-decoration,
+  .left-circle-half-decoration,
+  .right-decor,
+  .right-bottom-decor {
+      display: none !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .login {
+      width: 350px;
+  }
+
+  .loginContainer h1 {
+      font-size: 30px;
+  }
+
+  .inputContainer input {
+      width: 250px;
+  }
+
+  .btnLogin {
+      width: 250px;
+  }
+}

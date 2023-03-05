@@ -1,0 +1,158 @@
+body {
+    background-color: #FFF5ED;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins';
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Product*/
+
+.productContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.productItem{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.productImage{
+    width: 20%;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 20px;
+}
+.productImage img {
+    width: 100px;
+    height: auto;
+}
+
+.relatedProductItem img{
+    width: 60px;
+    height: auto;
+}
+
+.productInformation {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.productInformation p{
+    text-align: left;
+}
+
+.productInformation h1{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.productInformation h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: #E24C33;
+}
+
+
+.productInformation button{
+    width: 200px;
+    height: 64px;
+    color: white;
+    background: #06BCFB;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+/* Related products */
+.relatedProductContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.relatedProductItem {
+    width: 400px;
+    height: 350px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s all ease;
+    cursor: pointer;
+
+}
+
+.relatedProductItem:hover{
+    transform: scale(1.1);
+}
+
+.relatedProductItem h4:last-child {
+    color: #E24C33;
+}
+
+.relatedProductItem div div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 960px) {
+    .productItem{
+        flex-direction: column;
+    }
+    .productImage{
+        width: 90%;
+        height: 100%;
+        background: #FFFFFF;
+        padding: 10px;
+        border-radius: 20px;
+        margin: auto;
+    }
+    .productInformation {
+        width: 90%;
+        height: 300px;
+        margin: 50px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .relatedProductContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
